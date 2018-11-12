@@ -1,15 +1,28 @@
 fileFormatVersion: 2
-guid: 3e3aebab92c94fb44ae54362498415b3
+guid: 86ce48a4feefcbb418e88e08a9eeb489
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cylinder_001
+    100004: Plane
     400000: //RootNode
+    400002: Cylinder_001
+    400004: Plane
     2100000: Hojas
     2100002: Tronco
+    2100004: unnamed
     2300000: //RootNode
+    2300002: Cylinder_001
+    2300004: Plane
     3300000: //RootNode
+    3300002: Cylinder_001
+    3300004: Plane
     4300000: Cylinder_001
+    4300002: Plane
+    6400000: Cylinder_001
+    6400002: Plane
+    6400004: //RootNode
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -44,8 +57,8 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
-    addColliders: 0
+    meshCompression: 1
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
