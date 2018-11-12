@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 375326162}
   - component: {fileID: 375326161}
   - component: {fileID: 375326160}
+  - component: {fileID: 375326163}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -451,8 +452,8 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 3
   m_TerrainData: {fileID: 15600000, guid: a72312ff31ebc4740a6c054475964efc, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
+  m_TreeDistance: 2000
+  m_TreeBillboardDistance: 1437
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
@@ -487,6 +488,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &375326163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375326159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fbbbdd2120efa4093fc3e11ea863f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TreeRenderDist: 2000
+  terrain: {fileID: 375326161}
 --- !u!1 &490237396
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 490237402}
   playerCam: {fileID: 534669905}
-  throwForce: 600
+  throwForce: 1500
   dmg: 10
 --- !u!135 &492465509
 SphereCollider:
@@ -787,8 +801,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  far clip plane: 10000
+  field of view: 60.485287
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
