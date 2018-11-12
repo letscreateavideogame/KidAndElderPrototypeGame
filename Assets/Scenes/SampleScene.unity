@@ -648,3 +648,61 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1001 &2051604163
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.82071
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100040, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+      propertyPath: m_Name
+      value: mapa nivel 1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a5eb80192bb6884c8ce809558e83cb2, type: 3}
+  m_IsPrefabAsset: 0
