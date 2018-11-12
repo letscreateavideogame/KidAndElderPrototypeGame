@@ -5,7 +5,7 @@ public class ThrowObject : MonoBehaviour
 {
     public Transform player;
     public Transform playerCam;
-    public float throwForce = 10;
+    public float throwForce = 600;
     bool hasPlayer = false;
     bool beingCarried = false;
     bool ReleaseButton = true;
