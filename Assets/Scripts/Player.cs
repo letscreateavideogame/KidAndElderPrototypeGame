@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
 		
 	}
 
-    public void Entrar (puerta1 puerta)
+    public void Entrar (puerta puerta)
     {
         SceneManager.LoadScene(puerta.getEscena());
     }
