@@ -28,25 +28,22 @@ public class CamaraControler : MonoBehaviour
         Debug.Log(angleBetween);
         Debug.Log(MaxCamaraRotationDown + 31f);
         Debug.Log(MaxCamaraRotationUp + 91f);
-        if (angleBetween <= 150f && angleBetween >= 60f)
+        if (angleBetween < 150f && angleBetween > 60f)
         {
-
             float pitch = Input.GetAxisRaw("Mouse Y") * -1f * sensitivity * Time.deltaTime;
             transform.Rotate(pitch * Vector3.right, Space.Self);
-
         }
-        if (angleBetween < MaxCamaraRotationDown+31f)
+        if (angleBetween < MaxCamaraRotationDown+30f)
         {
             Debug.Log("ActiveMenorque60");
             float pitch = -60f * Time.deltaTime;
-            transform.Rotate(pitch * Vector3.right, Space.Self);
-            //GameObject.Find("Jugador").transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.localRotation = Quaternion.Euler(60, 0, 0);
         }
-        if (angleBetween > MaxCamaraRotationUp+89f)
+        if (angleBetween > MaxCamaraRotationUp+90f)
         {
             Debug.Log("Activemayorque150");
             float pitch = 60f * Time.deltaTime;
-            transform.Rotate(pitch * Vector3.right, Space.Self);
+            transform.localRotation = Quaternion.Euler(-28, 0, 0);
         }
 
 
