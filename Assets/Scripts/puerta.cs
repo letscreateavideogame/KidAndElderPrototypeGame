@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class puerta1 : MonoBehaviour {
+public class puerta : MonoBehaviour {
 
     public GameObject jugador;
     public string escena;
