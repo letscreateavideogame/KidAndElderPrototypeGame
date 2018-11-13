@@ -13,7 +13,7 @@ public class CamaraControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            var other = GameObject.Find("Jugador").transform.position; // just for my test
+            var other = GameObject.Find("Reference").transform.position; // just for my test
             var facing = transform.up; // what direction your object is "facing" is not always clear cut
             var self = transform.position;
 
