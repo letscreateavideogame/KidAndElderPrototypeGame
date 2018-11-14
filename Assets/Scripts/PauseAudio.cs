@@ -8,6 +8,7 @@ public class PauseAudio : MonoBehaviour {
     // Use this for initialization
     void Start () {
         m_MyAudioSource = GetComponent<AudioSource>();
+        m_MyAudioSource.Play();
     }
 
     // Update is called once per frame
