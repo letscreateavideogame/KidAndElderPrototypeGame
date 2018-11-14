@@ -325,92 +325,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 252548847}
---- !u!1 &61144549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 61144552}
-  - component: {fileID: 61144551}
-  - component: {fileID: 61144550}
-  m_Layer: 0
-  m_Name: New Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!102 &61144550
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61144549}
-  m_Text: Enter the child house -->>
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190325
---- !u!23 &61144551
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61144549}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!4 &61144552
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61144549}
-  m_LocalRotation: {x: 0.018680377, y: -0.56243855, z: -0.15777966, w: 0.8114305}
-  m_LocalPosition: {x: -41.776733, y: 8.278647, z: 8.369339}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: -8.463, y: -68.243004, z: -16.267}
 --- !u!1 &91215676
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +561,7 @@ GameObject:
   - component: {fileID: 252548849}
   - component: {fileID: 252548848}
   m_Layer: 5
-  m_Name: Pause Canvas
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -968,7 +882,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435940159}
   m_LocalRotation: {x: -0, y: -0.15454659, z: -0, w: 0.98798555}
-  m_LocalPosition: {x: -36.25, y: 1.642, z: 26.04}
+  m_LocalPosition: {x: -36.39, y: 1.642, z: 26.477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -985,7 +899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9520480c329475e4bb7fc2180d40e324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enterPanel: {fileID: 1649630821}
   jugador: {fileID: 2039286737}
   escena: InsideHouse
 --- !u!1 &490237396
@@ -1303,6 +1216,7 @@ GameObject:
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
   - component: {fileID: 534669907}
+  - component: {fileID: 534669908}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -1395,6 +1309,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f575ebe578a4a941adb655325f8e221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f12bd7cedd0b5418c8e99267bc2129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 252548847}
 --- !u!1001 &626331122
 Prefab:
   m_ObjectHideFlags: 0
@@ -1615,7 +1541,6 @@ GameObject:
   - component: {fileID: 718759842}
   - component: {fileID: 718759841}
   - component: {fileID: 718759844}
-  - component: {fileID: 718759845}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1680,18 +1605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2039286737}
---- !u!114 &718759845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 718759840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f12bd7cedd0b5418c8e99267bc2129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pausePanel: {fileID: 252548847}
 --- !u!1001 &722902646
 Prefab:
   m_ObjectHideFlags: 0
@@ -1967,6 +1880,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1403339502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,6 +2112,8 @@ Prefab:
 >>>>>>> 35860715a7244de0d2f3ba195780377f3e5054c6
 =======
 >>>>>>> parent of 3586071... Cama y casa
+=======
+>>>>>>> parent of 7efc1f2... Añadi texto para entrar a la puerta
 --- !u!1001 &1678798534
 Prefab:
   m_ObjectHideFlags: 0
