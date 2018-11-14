@@ -309,9 +309,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   m_RootOrder: 5
 >>>>>>> parent of 62a0361... Update Assets/Scenes/Town.unity
+=======
+>>>>>>> parent of 3eee29c... Merge branch 'master' of https://github.com/letscreateavideogame/KidAndElderPrototypeGame
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &58306370
 MonoBehaviour:
@@ -1881,6 +1884,9 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 3eee29c... Merge branch 'master' of https://github.com/letscreateavideogame/KidAndElderPrototypeGame
 --- !u!1 &1403339502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,6 +2056,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 =======
 --- !u!1001 &1496053433
 Prefab:
@@ -2114,6 +2121,8 @@ Prefab:
 >>>>>>> parent of 3586071... Cama y casa
 =======
 >>>>>>> parent of 7efc1f2... Añadi texto para entrar a la puerta
+=======
+>>>>>>> parent of 3eee29c... Merge branch 'master' of https://github.com/letscreateavideogame/KidAndElderPrototypeGame
 --- !u!1001 &1678798534
 Prefab:
   m_ObjectHideFlags: 0
@@ -2758,9 +2767,13 @@ Transform:
   - {fileID: 490237402}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
 =======
 >>>>>>> parent of 62a0361... Update Assets/Scenes/Town.unity
+=======
+  m_RootOrder: 4
+>>>>>>> parent of 3eee29c... Merge branch 'master' of https://github.com/letscreateavideogame/KidAndElderPrototypeGame
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2039286739
 MonoBehaviour:
