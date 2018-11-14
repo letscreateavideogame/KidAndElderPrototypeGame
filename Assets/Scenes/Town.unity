@@ -310,7 +310,10 @@ Transform:
   m_RootOrder: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 62a0361... Update Assets/Scenes/Town.unity
   m_RootOrder: 5
 >>>>>>> parent of 62a0361... Update Assets/Scenes/Town.unity
 =======
@@ -2768,12 +2771,15 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
 =======
 >>>>>>> parent of 62a0361... Update Assets/Scenes/Town.unity
 =======
   m_RootOrder: 4
 >>>>>>> parent of 3eee29c... Merge branch 'master' of https://github.com/letscreateavideogame/KidAndElderPrototypeGame
+=======
+>>>>>>> parent of 62a0361... Update Assets/Scenes/Town.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2039286739
 MonoBehaviour:
