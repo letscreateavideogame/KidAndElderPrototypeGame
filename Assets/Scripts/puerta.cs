@@ -22,9 +22,10 @@ public class puerta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         float dist = Vector3.Distance(this.transform.position, jugador.transform.position);
-	    if(Input.GetKeyDown("space") && dist < 2.0)
+        //Debug.Log(dist);
+	    if(Input.GetButtonDown("Jump") && dist < 5f)
         {
-            print("Espace pressed");
+            Debug.Log("Espace pressed");
             jugador.GetComponent<Player>().Entrar(this);
         }
     }

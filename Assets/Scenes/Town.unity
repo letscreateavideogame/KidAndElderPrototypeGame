@@ -205,7 +205,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 950e12b0d74b53b498a21311a9f099ce, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 101baec0f201ef8498d1235771a2b5e6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 2039286737}
-  escena: SampleScene
+  escena: InsideHouse
 --- !u!1 &490237396
 GameObject:
   m_ObjectHideFlags: 0
