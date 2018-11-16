@@ -11,6 +11,7 @@ public class CharacterAnimator : MonoBehaviour {
     float speedPercent=0;
     float Horizontal=0;
     float Vertical=0;
+    public float speedAnimation = 40f;
 
     // Use this for initialization
     void Start () {
@@ -20,6 +21,13 @@ public class CharacterAnimator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speedAnimation = 10000;
+        } else
+        {
+            speedAnimation = 40;
+        }
 
         if (Input.GetAxisRaw("Horizontal") >= 0) {
             Horizontal = Input.GetAxisRaw("Horizontal");
@@ -33,7 +41,7 @@ public class CharacterAnimator : MonoBehaviour {
         else Vertical = Input.GetAxisRaw("Vertical") * -1f;
 
 
-        speedPercent = Horizontal * 50 * Time.deltaTime + Vertical * 50 *Time.deltaTime;
+        speedPercent = Horizontal * speedAnimation * Time.deltaTime + Vertical * speedAnimation * Time.deltaTime;
 
         animator.SetFloat("speedPercent", speedPercent, locomationAnimationSmoothTime, Time.deltaTime);
 	}

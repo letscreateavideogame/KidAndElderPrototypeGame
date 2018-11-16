@@ -2,8 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
-    public float SpeedFoward = 15f;
-    public float Lateral = 15f;
+    public float MovingSpeed = 15f;
     public int forceConst = 5;
     public Rigidbody rb;
     private bool canJump;
@@ -20,7 +19,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Input.GetAxisRaw("Horizontal") * SpeedFoward * Time.deltaTime, 0, Input.GetAxisRaw("Vertical") * Lateral * Time.deltaTime);     
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            MovingSpeed = 10;
+        }
+        else
+        {
+            MovingSpeed = 5;
+        }
+        transform.Translate(Input.GetAxisRaw("Horizontal") * MovingSpeed * Time.deltaTime, 0, Input.GetAxisRaw("Vertical") * MovingSpeed * Time.deltaTime);     
         if (canJump)
         {
             canJump = false;
