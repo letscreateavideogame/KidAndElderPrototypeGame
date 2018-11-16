@@ -1,22 +1,40 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CharacterAnimator : MonoBehaviour {
     const float locomationAnimationSmoothTime = .1f;
 
-    UnityEngine.AI.NavMeshAgent agent;
+    NavMeshAgent agent;
     Animator animator;
+    float speedPercent=0;
+    float Horizontal=0;
+    float Vertical=0;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         animator = GetComponent<Animator>();
-        agent = GetComponentInChildren<UnityEngine.AI.NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        float speedPercentage = agent.velocity.magnitude / agent.speed;
+
+        if (Input.GetAxisRaw("Horizontal") >= 0) {
+            Horizontal = Input.GetAxisRaw("Horizontal");
+        }
+        else Horizontal = Input.GetAxisRaw("Horizontal") * -1f;
+
+        if (Input.GetAxisRaw("Vertical") >= 0)
+        {
+            Vertical = Input.GetAxisRaw("Vertical");
+        }
+        else Vertical = Input.GetAxisRaw("Vertical") * -1f;
+
+
+        speedPercent = Horizontal * 50 * Time.deltaTime + Vertical * 50 *Time.deltaTime;
+
         animator.SetFloat("speedPercent", speedPercent, locomationAnimationSmoothTime, Time.deltaTime);
 	}
 }
