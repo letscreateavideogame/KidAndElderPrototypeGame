@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CharacterAnimator : MonoBehaviour {
+// source https://www.youtube.com/watch?v=mBGUY7EUxXQ
+
+
+
+public class PlayerAnimator : MonoBehaviour {
     const float locomationAnimationSmoothTime = .1f;
 
     NavMeshAgent agent;
@@ -46,3 +50,4 @@ public class CharacterAnimator : MonoBehaviour {
         animator.SetFloat("speedPercent", speedPercent, locomationAnimationSmoothTime, Time.deltaTime);
 	}
 }
+
