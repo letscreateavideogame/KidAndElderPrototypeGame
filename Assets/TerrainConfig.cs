@@ -9,6 +9,5 @@ class TerrainConfig : MonoBehaviour
     {
 
         terrain.treeDistance = TreeRenderDist;
-        Debug.Log(terrain.treeDistance);
     }
 }

@@ -5,11 +5,11 @@ using UnityEngine;
 public class puerta : MonoBehaviour {
     [SerializeField] private GameObject enterPanel;
 
-    public GameObject jugador;
+    public GameObject Player;
     public string escena;
-    public GameObject getJugador()
+    public GameObject getPlayer()
     {
-        return jugador;
+        return Player;
     }
 
     public string getEscena()
@@ -23,7 +23,7 @@ public class puerta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float dist = Vector3.Distance(this.transform.position, jugador.transform.position);
+        float dist = Vector3.Distance(this.transform.position, Player.transform.position);
         //Debug.Log(dist);
         if (dist < 5f)
         {
@@ -34,7 +34,7 @@ public class puerta : MonoBehaviour {
 	    if(Input.GetButtonDown("Jump") && dist < 5f)
         {
             Debug.Log("Espace pressed");
-            jugador.GetComponent<Player>().Entrar(this);
+            Player.GetComponent<Player>().Entrar(this);
         }
     }
 }
